@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
 
-    <!-- Tailwind CSS CDN  -->
+    <!-- Daisy UI + Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font awesome CDN -->
     <script src="https://kit.fontawesome.com/06e3d34af8.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,11 +33,53 @@
             font-style: normal;
         }
     </style>
-
-
   </head>
+
   <body>
-    <h1 class="adlam-display text-red-500 font-bold text-5xl">Testing</h1>
-    <h1 class="sora">Testing <i class="fa-solid fa-house"></i></h1>
+    <!-- Header -->
+    <header>
+      <!-- Navbar section  -->
+       <nav class="bg-[#FFF9F4] sora">
+        <div class="py-2 px-2 md:py-6 max-w-screen-xl   mx-auto flex justify-between items-center">
+          <!-- left -->
+           <div class="flex gap-5 items-center">
+            <img src="assets/logo-header.png" alt="">
+            <h1  class="hidden md:block text-xl sora font-bold">Browse<span class="text-yellow-300">4</span>Pets</h1>
+           </div>
+
+           <!-- middle -->
+            <div class="hidden md:flex gap-10 font-bold">
+              <a>Find a pet</a>
+              <a>Breeds</a>
+              <a>Contact us</a>
+            </div>
+
+            <!-- right -->
+             <div class=" hidden md:flex gap-3 items-center">
+              <i class="fa-regular fa-bell"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <button class="btn btn-outline btn-warning">Login</button>
+              <button class="btn btn-warning">Register</button>
+             </div>
+             <div class="block md:hidden">
+              <img src="assets/list.png" alt="">
+             </div>
+        </div>
+       </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+
   </body>
+
 </html>
